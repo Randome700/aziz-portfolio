@@ -20,7 +20,7 @@ const ContactSection = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="mailto:contact@example.com">
+              <a href="mailto:beaziz022@gmail.com">
                 <Mail className="mr-2" size={18} /> Send Email
               </a>
             </Button>
@@ -28,7 +28,7 @@ const ContactSection = () => {
 
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/randome700"
+              href="https://github.com/Randome700"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
