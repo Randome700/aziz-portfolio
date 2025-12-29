@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <img
                   src={profilePhoto}
                   alt="Mohamed Aziz Ben Mansour - Frontend Developer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top scale-110"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
