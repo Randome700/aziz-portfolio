@@ -1,7 +1,17 @@
-import { Globe, ShoppingCart, Calendar, Building, Coffee } from "lucide-react";
+import { Globe, ShoppingCart, Calendar, Building, Database, LayoutDashboard } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
+  {
+    icon: LayoutDashboard,
+    title: "Full-Stack Web Applications",
+    description: "Complete web solutions with frontend, backend, and database. Built for scalability and real business needs.",
+  },
+  {
+    icon: Database,
+    title: "Database-Driven Systems",
+    description: "Custom management systems with CRUD operations, data analytics, and automated business logic.",
+  },
   {
     icon: Globe,
     title: "Website Design & Development",
@@ -21,11 +31,6 @@ const services = [
     icon: Building,
     title: "Business & Brand Websites",
     description: "Professional websites that establish credibility and showcase your brand identity effectively.",
-  },
-  {
-    icon: Coffee,
-    title: "Café & Restaurant Websites",
-    description: "Digital menus, online ordering, and location-based features tailored for the food industry.",
   },
 ];
 

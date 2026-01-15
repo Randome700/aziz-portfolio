@@ -18,15 +18,15 @@ const AboutSection = () => {
             <h2 className="section-title">A Developer You Can Count On</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm Mohamed Aziz Ben Mansour, a frontend developer dedicated to helping businesses 
-                establish and grow their online presence. I specialize in building websites that 
-                not only look professional but also deliver measurable business results.
+                I'm Mohamed Aziz Ben Mansour, a full-stack web developer dedicated to helping businesses 
+                establish and grow their online presence. I specialize in building complete web solutions — 
+                from user interfaces to databases — that deliver measurable business results.
               </p>
               <p>
                 My approach is simple: understand your business goals, deliver a solution that 
                 achieves them, and maintain clear communication throughout the process. Whether 
-                you need an e-commerce store, a booking system, or a brand website, I focus on 
-                creating solutions that work for you and your customers.
+                you need an e-commerce store, a management system, or a database-driven application, 
+                I build scalable solutions that work for you and your customers.
               </p>
             </div>
           </div>

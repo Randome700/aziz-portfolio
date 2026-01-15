@@ -5,6 +5,18 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
+    title: "Medis - Pharmacy Management System",
+    url: "https://youtu.be/gZ0j37k7dgQ",
+    image: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=800&h=500&fit=crop",
+    summary: "A comprehensive full-stack pharmacy stock management system with real-time inventory tracking, alerts, and analytics dashboard.",
+    problem: "Pharmacies struggle with manual inventory tracking, leading to expired medications, stock shortages, and inefficient operations.",
+    solution: "Built a complete management system with database-driven inventory, automated alerts for low stock and expiring items, and visual analytics.",
+    features: ["CRUD Operations", "MySQL Database", "Low Stock Alerts", "Expiration Tracking", "Analytics Dashboard", "Category Filtering"],
+    value: "Streamlined pharmacy operations with automated monitoring, reducing waste and preventing stock-outs.",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    isFeatured: true,
+  },
+  {
     title: "Homemade Cookies Online Store",
     url: "https://randome700.github.io/Home-Made-cookies/",
     image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&h=500&fit=crop",
@@ -75,7 +87,19 @@ const ProjectsSection = () => {
 
         <div className="space-y-12">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-card border-border overflow-hidden card-hover">
+            <Card 
+              key={index} 
+              className={`bg-card border-border overflow-hidden card-hover ${
+                project.isFeatured ? 'ring-2 ring-primary/50 relative' : ''
+              }`}
+            >
+              {project.isFeatured && (
+                <div className="absolute top-4 left-4 z-10">
+                  <Badge className="bg-primary text-primary-foreground">
+                    ⭐ Featured Full-Stack Project
+                  </Badge>
+                </div>
+              )}
               <div className="grid lg:grid-cols-2">
                 <div className="relative h-64 lg:h-auto">
                   <img
@@ -113,16 +137,23 @@ const ProjectsSection = () => {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, i) => (
-                        <span key={i} className="text-xs text-primary font-medium">
+                        <span 
+                          key={i} 
+                          className={`text-xs font-medium ${
+                            tech === 'PHP' || tech === 'MySQL' 
+                              ? 'text-green-500' 
+                              : 'text-primary'
+                          }`}
+                        >
                           {tech}{i < project.technologies.length - 1 && " •"}
                         </span>
                       ))}
                     </div>
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.url} target="_blank" rel="noopener noreferrer">
-                        View Live <ExternalLink className="ml-1" size={14} />
+                        {project.isFeatured ? 'Watch Demo' : 'View Live'} <ExternalLink className="ml-1" size={14} />
                       </a>
                     </Button>
                   </div>
