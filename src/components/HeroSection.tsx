@@ -8,15 +8,15 @@ const HeroSection = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 animate-fade-in">
-            <p className="text-primary font-medium mb-4">Frontend Developer</p>
+            <p className="text-primary font-medium mb-4">Full-Stack Web Developer</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Mohamed Aziz
               <br />
               <span className="text-muted-foreground">Ben Mansour</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">
-              I build websites that drive business results. From e-commerce stores to booking systems, 
-              I deliver clean, fast, and conversion-focused solutions that help businesses grow online.
+              I build complete web solutions from frontend to backend. From e-commerce stores to management systems, 
+              I deliver clean, scalable, and database-driven applications that help businesses grow online.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" asChild>
@@ -37,7 +37,7 @@ const HeroSection = () => {
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-secondary shadow-2xl">
                 <img
                   src={profilePhoto}
-                  alt="Mohamed Aziz Ben Mansour - Frontend Developer"
+                  alt="Mohamed Aziz Ben Mansour - Full-Stack Web Developer"
                   className="w-full h-full object-cover object-top scale-110"
                 />
               </div>

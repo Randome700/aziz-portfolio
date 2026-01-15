@@ -1,10 +1,15 @@
-import { Code, Wrench, Palette } from "lucide-react";
+import { Code, Wrench, Palette, Database } from "lucide-react";
 
 const skillCategories = [
   {
     icon: Code,
     title: "Frontend Technologies",
     skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "CSS Grid & Flexbox", "CSS Animations"],
+  },
+  {
+    icon: Database,
+    title: "Backend & Database",
+    skills: ["PHP", "MySQL", "CRUD Operations", "Database Design", "Server-Side Logic", "API Development"],
   },
   {
     icon: Palette,
@@ -14,7 +19,7 @@ const skillCategories = [
   {
     icon: Wrench,
     title: "Tools & Platforms",
-    skills: ["Git & GitHub", "VS Code", "Chrome DevTools", "Figma (Basic)", "GitHub Pages", "Netlify"],
+    skills: ["Git & GitHub", "VS Code", "Chrome DevTools", "phpMyAdmin", "XAMPP", "GitHub Pages"],
   },
 ];
 
@@ -26,11 +31,11 @@ const SkillsSection = () => {
           <p className="text-primary font-medium mb-2">Expertise</p>
           <h2 className="section-title">Skills & Technologies</h2>
           <p className="section-subtitle mx-auto">
-            Core competencies focused on delivering clean, performant, and user-friendly web experiences.
+            Full-stack competencies for building complete web solutions from database to user interface.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className="text-center">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
