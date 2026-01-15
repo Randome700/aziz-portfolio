@@ -101,13 +101,25 @@ const ProjectsSection = () => {
                 </div>
               )}
               <div className="grid lg:grid-cols-2">
-                <div className="relative h-64 lg:h-auto">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent lg:hidden" />
+                <div className="relative h-64 lg:h-auto min-h-[250px]">
+                  {project.isFeatured ? (
+                    <iframe
+                      src="https://www.youtube.com/embed/gZ0j37k7dgQ"
+                      title={project.title}
+                      className="absolute inset-0 w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <>
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent lg:hidden" />
+                    </>
+                  )}
                 </div>
                 <CardContent className="p-6 lg:p-8">
                   <h3 className="text-xl font-bold text-foreground mb-3">{project.title}</h3>
