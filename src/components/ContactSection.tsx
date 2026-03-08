@@ -1,4 +1,4 @@
-import { Mail, ExternalLink, Github } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
