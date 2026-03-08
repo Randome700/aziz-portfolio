@@ -1,4 +1,4 @@
-import { Mail, ExternalLink, Github } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -15,7 +15,7 @@ const ContactSection = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button size="lg" asChild>
-              <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.fiverr.com/med_aziz321/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2" size={18} /> Hire Me on Fiverr
               </a>
             </Button>
@@ -27,15 +27,6 @@ const ContactSection = () => {
           </div>
 
           <div className="flex justify-center gap-6">
-            <a
-              href="https://github.com/Randome700"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Github size={20} />
-              <span className="text-sm">GitHub</span>
-            </a>
             <a
               href="https://www.linkedin.com/"
               target="_blank"
