@@ -61,6 +61,17 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
+    title: "PAC-MAN – Classic Arcade Recreation",
+    url: "https://randome700.github.io/Pac-Man/",
+    image: "https://images.unsplash.com/photo-1579309401389-a2476dddf3d4?w=800&h=500&fit=crop",
+    summary: "A full recreation of the classic PAC-MAN arcade game built entirely from scratch — no libraries, no frameworks, no game engines.",
+    problem: "Wanted to demonstrate deep JavaScript mastery by recreating a complex game with authentic mechanics.",
+    solution: "Built the entire game from scratch using HTML5 Canvas with authentic ghost AI, tile-locked movement, and real-time audio synthesis via Web Audio API.",
+    features: ["Ghost AI with personalities", "Power pellets & frightened mode", "Animated lobby screen", "Real-time audio synthesis", "Score & high score tracking", "Death animation sequence"],
+    value: "Showcases advanced vanilla JavaScript skills, canvas rendering, and algorithmic thinking — no dependencies.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     title: "Neon Creative - Web Agency",
     url: "https://randome700.github.io/Neon-Creative/",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
