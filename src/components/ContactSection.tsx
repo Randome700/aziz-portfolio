@@ -15,7 +15,7 @@ const ContactSection = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button size="lg" asChild>
-              <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.fiverr.com/med_aziz321/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2" size={18} /> Hire Me on Fiverr
               </a>
             </Button>
