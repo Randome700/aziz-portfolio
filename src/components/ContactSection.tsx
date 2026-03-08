@@ -28,15 +28,6 @@ const ContactSection = () => {
 
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/Randome700"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Github size={20} />
-              <span className="text-sm">GitHub</span>
-            </a>
-            <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
